@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <head>
+    <title>ZeroBit Demo</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="wrapper">
+
+        <form class="upload" action="index.html" method="post">
+          <div class="upload-section">
+            <span>Upload File</span>
+            <input id="upload-input" type="file" name="file" value="file">
+          </div>
+
+          <input id="filename" type="text" placeholder="file name" disabled>
+          <div class="upload-btn"> Upload </div>
+        </form>
+
+        <div class="wait"> 
+          <div class="loader"></div>
+          <p>uploading...</p>
+        </div>
+
+        <div id="results">
+          <p class="heading">File Hash:</p>
+          <p id="fileHash"> </p>
+          <p class="heading">File URL:</p>
+          <a id="fielURL" target="_blank" href="#"></a>
+        </div>
+
+    </div>
+  </body>
+</html>
+
+<script src="./upload.js"></script>
